@@ -3,7 +3,8 @@
 #include <stdbool.h>
 
 int main(int argc, char const *argv[]) {
-    char *memory = calloc(30000, sizeof(char));
+    int memory_size = 30000;
+    char *memory = calloc(memory_size, sizeof(char));
     int cell = 0;
     char ptr;
 
@@ -33,6 +34,12 @@ int main(int argc, char const *argv[]) {
 
     for(int i = 0; i < code_size; i++) {
         int ptr;
+        if(cell == -1) {
+            cell = memory_size-1;
+        }
+        if(cell == memory_size) {
+            cell = 0;
+        }
         if(code[i] == '.') {
             printf("%c", memory[cell]);
         } else if (code[i] == '+') {

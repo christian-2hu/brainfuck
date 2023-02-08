@@ -40,7 +40,10 @@ int main(int argc, char const *argv[]) {
         if(cell == memory_size) {
             cell = 0;
         }
-        if(code[i] == '.') {
+        if(code[i] == ',') {
+            char input = getchar();
+             memory[cell] = input;
+        } else if(code[i] == '.') {
             printf("%c", memory[cell]);
         } else if (code[i] == '+') {
             memory[cell]++;

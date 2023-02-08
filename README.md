@@ -4,6 +4,7 @@
 
 | Commands | Meaning 
 |----------|:---------
+| **,** | Get user input and store in the pointer
 | **.** | Print what is in the pointer
 | **+** | Increase the char by one  
 | **-** | Decrease the char by one 

@@ -15,3 +15,10 @@
 For more details [see](https://en.wikipedia.org/wiki/Brainfuck). 
 
 [Some tests](http://www.brainfuck.org/tests.b) I'm using to test my implementation, feel free to use it too.
+
+## Installing
+
+Just run:
+```
+gcc -o brainfuck brainfuck.c
+```

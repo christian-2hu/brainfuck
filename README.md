@@ -17,6 +17,8 @@ For more details [see](https://en.wikipedia.org/wiki/Brainfuck).
 
 [Some tests](http://www.brainfuck.org/tests.b) I'm using to test my implementation, feel free to use it too.
 
+**Warning:** it still doesn't support nested loops.
+
 ## Installing
 
 Just run:

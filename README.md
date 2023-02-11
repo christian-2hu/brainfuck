@@ -21,7 +21,12 @@ For more details [see](https://en.wikipedia.org/wiki/Brainfuck).
 
 ## Installing
 
-Just run:
+1. Compile with:
 ```
 gcc -o brainfuck brainfuck.c
+```
+2. Create a text file example.txt or with any extension you want
+3. Run:
+```
+brainfuck example.txt
 ```

@@ -40,25 +40,35 @@ int main(int argc, char const *argv[]) {
         if(cell == memory_size) {
             cell = 0;
         }
-        if(code[i] == ',') {
+        switch(code[i]) {
+        case ',': {
             char input = getchar();
-             memory[cell] = input;
-        } else if(code[i] == '.') {
+            memory[cell] = input;
+            break;
+        }
+        case '.':
             printf("%c", memory[cell]);
-        } else if (code[i] == '+') {
+            break;
+        case '+': 
             memory[cell]++;
-        } else if(code[i] == '-') {
+            break;
+        case '-':
             memory[cell]--;
-        } else if(code[i] == '>') {
+            break;
+        case '>':
             cell++;
-        } else if(code[i] == '<') {
+            break;
+        case '<':
             cell--;
-        } else if(code[i] == '[') { 
+            break;
+        case '[':
             ptr = i;
-        } else if(code[i] == ']') {
+            break;
+        case ']':
             if(memory[cell] != 0) {
                 i = ptr;
             }
+            break;
         }
     }
     fclose(file);
